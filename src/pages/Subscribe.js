@@ -11,8 +11,7 @@ const Subscribe = ({ user }) => {
 
     const handlePaymentSuccess = () => {
         alert("Paiement réussi !");
-        setShowModal(false); // Fermer le modal après le paiement réussi
-        // Redirigez ou mettez à jour l'interface
+        setShowModal(false);
     };
 
     return (

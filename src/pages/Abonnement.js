@@ -11,22 +11,22 @@ import Subscribe from "./Subscribe";
 import { useNavigate } from "react-router-dom";
 
 const Abonnement = () => {
-    const { user } = useContext(UserContext); // Récupérer l'utilisateur depuis le contexte
+    const { user } = useContext(UserContext);
     const [status, setStatus] = useState(null);
     const [autoRenew, setAutoRenew] = useState(false);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [renewLoading, setRenewLoading] = useState(false);
-    const [showCancelModal, setShowCancelModal] = useState(false); // Pour afficher/masquer le modal
+    const [showCancelModal, setShowCancelModal] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
         if (user === null) {
-            return; // Attendez que le contexte soit complètement chargé
+            return;
         }
 
         if (!user) {
-            navigate("/login"); // Redirigez seulement si `user` est explicitement "falsey" (non connecté)
+            navigate("/login");
             return;
         }
 
@@ -60,9 +60,8 @@ const Abonnement = () => {
             // Appeler l'API pour renouveler l'abonnement
             await renewSubscription({ email: user.email });
 
-            // Recharger les informations d'abonnement
             const updatedStatus = await checkSubscriptionStatus(user.email);
-            setStatus(updatedStatus.data); // Mettre à jour le statut avec les nouvelles données
+            setStatus(updatedStatus.data);
         } catch (err) {
             setError("Erreur lors du renouvellement de l'abonnement.");
         } finally {
@@ -78,7 +77,7 @@ const Abonnement = () => {
         } catch (err) {
             setError("Erreur lors de l'annulation de l'abonnement.");
         } finally {
-            setShowCancelModal(false); // Fermer le modal
+            setShowCancelModal(false);
         }
     };
 
@@ -91,7 +90,6 @@ const Abonnement = () => {
         );
     }
     if (!status) {
-        // Si l'utilisateur n'a pas d'abonnement, afficher la page Subscribe
         return <Subscribe user={user} />;
     }
 

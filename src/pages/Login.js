@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
 import { loginUser } from "../services/api";
 import { useNavigate, Link } from "react-router-dom";
-import { UserContext } from "../context/UserContext"; // Importez le contexte utilisateur
-import logo from "../assets/logo.png"; // Assurez-vous que le chemin est correct
+import { UserContext } from "../context/UserContext";
+import logo from "../assets/logo.png";
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -11,8 +11,7 @@ const Login = () => {
     });
     const [error, setError] = useState(null);
     const navigate = useNavigate();
-    const { login } = useContext(UserContext); // Récupérer la fonction login depuis le contexte
-
+    const { login } = useContext(UserContext);
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
@@ -21,10 +20,9 @@ const Login = () => {
         e.preventDefault();
         try {
             const response = await loginUser(formData);
-            // Stocker l'utilisateur et le token via le contexte
+
             login(response.data.user, response.data.token);
 
-            // Redirection vers le tableau de bord
             navigate("/dashboard");
         } catch (err) {
             setError(err.response?.data?.message || "Une erreur est survenue.");
