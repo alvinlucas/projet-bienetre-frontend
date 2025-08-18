@@ -53,7 +53,7 @@ L’application sera accessible sur `http://localhost:4000`.
 - [`📘 manuel_deploiement.md`](./documentation/manuel_deploiement.md) — Instructions d'installation & déploiement.
 - [`📘 manuel_utilisation.md`](./documentation/manuel_utilisation.md) — Pages, rôles, navigation.
 - [`📘 manuel_mise_a_jour.md`](./documentation/manuel_mise_a_jour.md) — Mise à jour et redéploiement.
-- [`📘 accessibilite_frontend.md`](./documentation/accessibilite_frontend.md) — Bonnes pratiques d’accessibilité.
+- [`📘 accessibilite_frontend.md`](./documentation/accessibilite.md) — Bonnes pratiques d’accessibilité.
 - [`📘 version.md`](./documentation/version.md) — Historique des versions.
 
 ---
