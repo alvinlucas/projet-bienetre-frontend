@@ -1,4 +1,3 @@
-
 # Accessibilité – Frontend
 
 L’interface a été développée en tenant compte des bonnes pratiques d’accessibilité numérique, afin de permettre une navigation fluide et inclusive, notamment pour les utilisateurs ayant recours à des lecteurs d’écran ou à la navigation clavier.

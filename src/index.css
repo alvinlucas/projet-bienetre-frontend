@@ -5,8 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #FAF0E6; /* Couleur beige */
+  font-family: "Poppins", sans-serif;
+  background-color: #faf0e6; /* Couleur beige */
 }
 /* Ajout des transitions générales */
 button {
@@ -30,9 +30,7 @@ button:active {
   animation: fadeOut 0.3s ease-in-out forwards;
 }
 
-
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

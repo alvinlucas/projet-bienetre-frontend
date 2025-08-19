@@ -9,7 +9,7 @@ Ce dépôt contient le frontend du projet Bien-Être, une plateforme de cours de
 🚀 Lancement du projet  
 📚 Documentation  
 🛠 Technologies  
-📜 Licence  
+📜 Licence
 
 ---
 
@@ -37,7 +37,8 @@ PORT=4000
 
 ---
 
-🚀 Lancement du projet  
+🚀 Lancement du projet
+
 ```bash
 npm start
 ```
@@ -58,12 +59,13 @@ L’application sera accessible sur `http://localhost:4000`.
 
 ---
 
-🛠 Technologies  
-- React 18  
-- TailwindCSS  
-- Stripe.js  
-- Axios  
-- React Router  
+🛠 Technologies
+
+- React 18
+- TailwindCSS
+- Stripe.js
+- Axios
+- React Router
 - GitHub Actions + Render (déploiement)
 
 ---

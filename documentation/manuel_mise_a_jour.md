@@ -1,4 +1,3 @@
-
 # 🛠️ Manuel de Mise à Jour – Frontend
 
 Ce document explique comment maintenir à jour le frontend de l’application (React) en local et en production.
@@ -29,6 +28,7 @@ npm outdated
 ```
 
 Cela affichera :
+
 - La version actuelle installée.
 - La version souhaitée (compatible).
 - La dernière version disponible.

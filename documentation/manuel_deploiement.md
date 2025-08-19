@@ -1,6 +1,7 @@
 # Manuel de Déploiement – Frontend
 
 ## Prérequis
+
 - Node.js ≥ 18
 - Compte Render.com
 - GitHub (avec dépôt connecté)
@@ -16,6 +17,7 @@ npm install
 ```
 
 Créer un fichier `.env` :
+
 ```
 REACT_APP_API_URL=http://localhost:3000/api
 REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_key
@@ -23,6 +25,7 @@ PORT=4000
 ```
 
 Puis lancer :
+
 ```bash
 npm start
 ```
@@ -43,4 +46,3 @@ npm start
    - `PORT=4000`
 
 4. Cliquer sur "Deploy".
-

@@ -7,25 +7,25 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Videos from "./pages/Video";
 import Abonnement from "./pages/Abonnement";
-import './App.css';
+import "./App.css";
 
 const App = () => {
-    return (
-        <UserProvider>
-            <Router>
-                <div className="bg-beige min-h-screen">
-                    <Routes>
-                        <Route path="/signup" element={<Signup />} />
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/dashboard" element={<Dashboard />} />
-                        <Route path="/videos" element={<Videos />} />
-                        <Route path="/abonnement" element={<Abonnement />} />
-                        <Route path="/" element={<Home />} />
-                    </Routes>
-                </div>
-            </Router>
-        </UserProvider>
-    );
+  return (
+    <UserProvider>
+      <Router>
+        <div className="bg-beige min-h-screen">
+          <Routes>
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/videos" element={<Videos />} />
+            <Route path="/abonnement" element={<Abonnement />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+      </Router>
+    </UserProvider>
+  );
 };
 
 export default App;
