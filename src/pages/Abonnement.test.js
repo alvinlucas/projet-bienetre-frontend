@@ -1,6 +1,6 @@
 
 import React from "react";
-import { render, screen, act, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import Abonnement from "../pages/Abonnement";
 import { UserContext } from "../context/UserContext";
 import * as api from "../services/api";

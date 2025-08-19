@@ -1,8 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import Subscribe from "./Subscribe";
-import * as stripeJs from "@stripe/react-stripe-js";
-import * as stripeLoader from "@stripe/stripe-js";
 
 // Mock de PaymentForm
 jest.mock("./PaymentForm", () => ({ user, onSuccess }) => (

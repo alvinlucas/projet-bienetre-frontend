@@ -2,7 +2,6 @@ import React from "react";
 import { render, fireEvent, waitFor, screen } from "@testing-library/react";
 import PaymentForm from "../pages/PaymentForm";
 import { Elements } from "@stripe/react-stripe-js";
-import { UserContext } from "../context/UserContext";
 import { createSubscription } from "../services/api";
 import { loadStripe } from "@stripe/stripe-js";
 
