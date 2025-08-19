@@ -26,6 +26,12 @@ jobs:
       - name: Installer les dépendances
         run: npm install
 
+      - name: Vérifier le code avec ESLint
+        run: npm run lint
+
+      - name: Vérifier le formatage avec Prettier
+        run: npm run prettier:check
+
       - name: Lancer les tests
         run: npm run test -- --watchAll=false
 
